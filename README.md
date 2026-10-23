@@ -18,7 +18,7 @@ claude plugin marketplace add dg1com/shared-layer-extensions
 claude plugin install shared-layer@shared-layer
 ```
 
-Then run `/mcp`, pick `shared-layer` and sign in. The plugin bundles the MCP server, the skill and the `/shared-layer:list_knowledge` command. Update with `claude plugin update shared-layer@shared-layer`, or turn on auto-update for the marketplace in `/plugin`. Bump `version` in `claude-code/.claude-plugin/plugin.json` whenever the plugin's files change, or users will not see the change.
+Then run `/mcp`, pick `shared-layer` and sign in. The plugin bundles the MCP server, the skill and the `/shared-layer:list_knowledge`, `/shared-layer:recall` and `/shared-layer:retain` commands. Update with `claude plugin update shared-layer@shared-layer`, or turn on auto-update for the marketplace in `/plugin`. Bump `version` in `claude-code/.claude-plugin/plugin.json` whenever the plugin's files change, or users will not see the change.
 
 ## Gemini CLI
 
