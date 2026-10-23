@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "shared-layer": {
+      "type": "http",
+      "url": "https://swissai.sharedlayer.ai/mcp?client=claude-code"
+    }
+  }
+}

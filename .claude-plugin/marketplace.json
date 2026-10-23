@@ -1,0 +1,16 @@
+{
+  "name": "shared-layer",
+  "owner": {
+    "name": "Progmbh"
+  },
+  "metadata": {
+    "description": "Shared Layer: the team's shared knowledge base for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "shared-layer",
+      "source": "./claude-code",
+      "description": "The team's shared knowledge base: MCP server and skill."
+    }
+  ]
+}

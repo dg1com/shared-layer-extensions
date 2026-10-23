@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    { "type": "promptString", "id": "shared-layer-key", "description": "Shared knowledge base API key", "password": true }
+  ],
+  "servers": {
+    "shared-layer": {
+      "type": "http",
+      "url": "https://swissai.sharedlayer.ai/mcp?client=vscode",
+      "headers": { "Authorization": "Bearer ${input:shared-layer-key}" }
+    }
+  }
+}
