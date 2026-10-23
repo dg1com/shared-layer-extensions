@@ -1,6 +1,6 @@
 {
   "name": "shared-layer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The team's shared knowledge base: the shared-layer MCP server.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {

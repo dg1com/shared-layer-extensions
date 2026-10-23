@@ -1,6 +1,6 @@
 # Shared Layer extensions
 
-Packages that connect coding agents to the Shared Layer knowledge base, an MCP server at `https://swissai.sharedlayer.ai/mcp`. Every package tells the agent to read `/skills/okf/SKILL.md` from the server first. That skill lives in the knowledge base, so changing it updates every agent without a new release here.
+Packages that connect coding agents to the Shared Layer knowledge base, an MCP server at `https://swissai.sharedlayer.ai/mcp`. Every package tells the agent to call the server's `begin` tool first. It returns the guide to the knowledge base, which is part of the server, and the root index, so changing either updates every agent without a new release here.
 
 | Agent | Folder | Install |
 | --- | --- | --- |
