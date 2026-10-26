@@ -8,6 +8,7 @@ Packages that connect coding agents to the Shared Layer knowledge base, an MCP s
 | Gemini CLI | [`gemini-cli`](gemini-cli) | extension, see below |
 | Codex | [`codex`](codex) | config snippet, see below |
 | VS Code (Copilot) | [`vscode`](vscode) | config snippet, see below |
+| Grok Bot | [`grok-bot`](grok-bot) | remote MCP, see below |
 
 claude.ai and the Claude apps need no package: Settings → Connectors → Add custom connector, name it "Shared Layer" and enter `https://swissai.sharedlayer.ai/mcp`.
 
@@ -39,3 +40,7 @@ Add the lines from [`codex/AGENTS.md`](codex/AGENTS.md) to `~/.codex/AGENTS.md` 
 ## VS Code (Copilot)
 
 Add [`vscode/mcp.json`](vscode/mcp.json) to your user MCP configuration (Command Palette → "MCP: Open User Configuration"). VS Code asks for a personal API key on first use. Add the lines from [`codex/AGENTS.md`](codex/AGENTS.md) to `.github/copilot-instructions.md` or the repository's `AGENTS.md`.
+
+## Grok Bot
+
+Add `https://swissai.sharedlayer.ai/mcp?client=grok-bot` under **Connect apps** (on a team plan, an admin allows it first under **Plugins & MCPs**) and sign in. Then give the bot [`grok-bot/skills/shared-layer/SKILL.md`](grok-bot/skills/shared-layer/SKILL.md), or the lines from [`codex/AGENTS.md`](codex/AGENTS.md) as custom instructions. Steps, the API key fallback and what to do if sign-in fails: [`grok-bot/README.md`](grok-bot/README.md).
