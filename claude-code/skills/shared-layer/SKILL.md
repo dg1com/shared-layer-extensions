@@ -62,7 +62,7 @@ A KB skill is a procedure the team wrote for agents ("how we write a client prop
 
 - `begin` lists the skills you can use under `# Skills`, by area, each with its description. Each area's `skills/index.md` lists its own.
 - When a task matches a skill's description, `read` its `SKILL.md` and follow it. Read its helper files only when you need them. An area's skills apply to work in that area.
-- The user can also load one by name with `/shared-layer:load <skill>`.
+- The user can also load one by name with `/shared-layer:load_skill <skill>`.
 - Skills, like rules, steer every agent: create or change them only when a person asks you to.
 
 ## Tools
