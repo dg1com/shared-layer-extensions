@@ -19,7 +19,7 @@ claude plugin marketplace add dg1com/shared-layer-extensions
 claude plugin install shared-layer@shared-layer
 ```
 
-Then run `/mcp`, pick `shared-layer` and sign in. The plugin bundles the MCP server, the skill and the `/shared-layer:begin`, `/shared-layer:list_files <path> [type]`, `/shared-layer:recall`, `/shared-layer:retain` and `/shared-layer:load_skill <skill>` commands. Update with `claude plugin update shared-layer@shared-layer`, or turn on auto-update for the marketplace in `/plugin`. Bump `version` in `claude-code/.claude-plugin/plugin.json` whenever the plugin's files change, or users will not see the change.
+Then run `/mcp`, pick `shared-layer` and sign in. The plugin bundles the MCP server, the skill and the `/shared-layer:begin`, `/shared-layer:list_files <path> [type]`, `/shared-layer:recall`, `/shared-layer:retain`, `/shared-layer:load_skill <skill>` and `/shared-layer:inbox` commands. `/shared-layer:inbox` shows your messages; `/shared-layer:inbox watch 10m` has them checked on a schedule. Update with `claude plugin update shared-layer@shared-layer`, or turn on auto-update for the marketplace in `/plugin`. Bump `version` in `claude-code/.claude-plugin/plugin.json` whenever the plugin's files change, or users will not see the change.
 
 ## Gemini CLI
 
@@ -43,4 +43,4 @@ Add [`vscode/mcp.json`](vscode/mcp.json) to your user MCP configuration (Command
 
 ## Grok Bot
 
-Add `https://swissai.sharedlayer.ai/mcp?client=grok-bot` under **Connect apps** (on a team plan, an admin allows it first under **Plugins & MCPs**) and sign in. Then give the bot [`grok-bot/skills/shared-layer/SKILL.md`](grok-bot/skills/shared-layer/SKILL.md), or the lines from [`codex/AGENTS.md`](codex/AGENTS.md) as custom instructions. Steps, the API key fallback and what to do if sign-in fails: [`grok-bot/README.md`](grok-bot/README.md).
+Add `https://swissai.sharedlayer.ai/mcp?client=grok-bot` under **Connect apps** (on a team plan, an admin allows it first under **Plugins & MCPs**) and sign in. Then give the bot [`grok-bot/skills/shared-layer/SKILL.md`](grok-bot/skills/shared-layer/SKILL.md) and, for messages ("sharedlayer inbox"), [`grok-bot/skills/shared-layer-inbox/SKILL.md`](grok-bot/skills/shared-layer-inbox/SKILL.md), or the lines from [`codex/AGENTS.md`](codex/AGENTS.md) as custom instructions. Steps, the API key fallback and what to do if sign-in fails: [`grok-bot/README.md`](grok-bot/README.md).

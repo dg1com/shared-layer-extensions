@@ -23,7 +23,8 @@ The server's tools may need loading first (search for "shared-layer"). Then call
 2. **The guide**: how the KB is organized and the exact steps for reading, writing and maintaining it. It is part of the server and may be newer than this skill: where they differ, the guide wins.
 3. **The root `index.md`**: the KB's description, the root rules, and every area you can access with what is at its first level. Usually enough to pick the area and folder for a task.
 4. **`# Skills`**: the KB skills you can use, by area, if any.
-5. **Your connections**, if any were shared with you.
+5. **`# Messages`**: the people and groups you can message, by handle.
+6. **Your connections**, if any were shared with you.
 
 After `begin`, you know what is in the Shared Layer for you and where to start. If you were asked only to start a session, summarize the areas, skills and connections in a few lines and ask what to recall or save.
 
@@ -78,6 +79,7 @@ All tools act with your grants. `begin` first, always.
 | Folders | `describe_folder` (a folder's one-sentence description), `set_folder_rules` (only when a person asks) |
 | Attachments | `prepare_upload` (a file on disk or over a few hundred KB; returns a `curl` command), `upload_attachment` (a small file in memory, base64) |
 | Sharing | `share`, `unshare` (only when a person asks; bots never share) |
+| Messages | `send_message`, `reply`, `recipients`; `inbox` and `mark_done` when the user asks about their messages (`inbox` with no arguments returns how to handle them) |
 | Connections | `connection_list`, `connection_search`, `connection_run` (only if connections were shared with you) |
 
 Every write needs a `message` saying what changed and why; it becomes the folder's log entry. Each write result carries the file's `link` to its page in the app: give it to the user as is, never build one from the path. On a version conflict, merge your change into the current content the error returns and retry.
