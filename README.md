@@ -19,7 +19,7 @@ claude plugin marketplace add dg1com/shared-layer-extensions
 claude plugin install shared-layer@shared-layer
 ```
 
-Then run `/mcp`, pick `shared-layer` and sign in. The plugin bundles the MCP server, the skill and the `/shared-layer:begin`, `/shared-layer:list_files <path> [type]`, `/shared-layer:recall`, `/shared-layer:retain`, `/shared-layer:load_skill <skill>`, `/shared-layer:inbox` and `/shared-layer:whoami` commands. `/shared-layer:inbox` shows your messages; `/shared-layer:inbox watch 10m` has them checked on a schedule. Update with `claude plugin update shared-layer@shared-layer`, or turn on auto-update for the marketplace in `/plugin`. Bump `version` in `claude-code/.claude-plugin/plugin.json` whenever the plugin's files change, or users will not see the change.
+Then run `/mcp`, pick `shared-layer` and sign in. The plugin bundles the MCP server, the skill and the `/shared-layer:begin`, `/shared-layer:list_files <path> [type]`, `/shared-layer:recall`, `/shared-layer:retain`, `/shared-layer:load_skill <skill>`, `/shared-layer:inbox`, `/shared-layer:whoami` and `/shared-layer:latest [7d]` commands. `/shared-layer:inbox` shows your messages; `/shared-layer:inbox watch 10m` has them checked on a schedule. `/shared-layer:latest` lists what changed in the last day, or as far back as given. Update with `claude plugin update shared-layer@shared-layer`, or turn on auto-update for the marketplace in `/plugin`. Bump `version` in `claude-code/.claude-plugin/plugin.json` whenever the plugin's files change, or users will not see the change.
 
 ## Gemini CLI
 
