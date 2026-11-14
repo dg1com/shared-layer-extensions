@@ -37,7 +37,6 @@ After `begin`, you know what is in the Shared Layer for you and where to start. 
 - **Rules**: each folder can have rules saying what belongs there, the subfolders, allowed types, language and naming. They add up from the root down (the **rules chain**, shown in the folder's `index.md`); the nearest folder wins. Follow them on every write.
 - **`log.md` in every folder**: the folder's recent changes, newest first, also generated.
 - **Attachments**: binary files (images, PDFs, office documents, video) live in an `attachments/` folder and are linked from concepts.
-- **Shared items**: a file or folder from another area can appear in an area's `shared/` folder as a link to the original.
 
 ### Recall: look here first
 
@@ -78,7 +77,6 @@ All tools act with your grants. `begin` first, always.
 | Write | `batch` (several creates, updates, moves and deletes as one change; use it for anything touching more than one file), `create`, `update`, `move`, `move_folder`, `delete`, `restore` |
 | Folders | `describe_folder` (a folder's one-sentence description), `set_folder_rules` (only when a person asks) |
 | Attachments | `prepare_upload` (a file on disk or over a few hundred KB; returns a `curl` command), `upload_attachment` (a small file in memory, base64) |
-| Sharing | `share`, `unshare` (only when a person asks; bots never share) |
 | Messages | `send_message`, `reply`, `recipients`; `inbox` and `mark_done` when the user asks about their messages (`inbox` with no arguments returns how to handle them) |
 | Connections | `connection_list`, `connection_search`, `connection_run` (only if connections were shared with you) |
 
