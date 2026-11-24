@@ -1,6 +1,6 @@
 # Shared Layer extensions
 
-Packages that connect coding agents to the Shared Layer knowledge base, an MCP server at `https://swissai.sharedlayer.ai/mcp`. Every package tells the agent to call the server's `begin` tool first. It returns the guide to the knowledge base, which is part of the server, and the root index, so changing either updates every agent without a new release here.
+Packages that connect coding agents to the Shared Layer knowledge base, an MCP server at `https://swissai.sharedlayer.ai/mcp`. Every package tells the agent to call the server's `begin` tool first. It returns who the agent is, the rules always in force, how to read, the root index and the guides to load with `help` when needed. Both are part of the server, so changing them updates every agent without a new release here.
 
 | Agent | Folder | Install |
 | --- | --- | --- |
