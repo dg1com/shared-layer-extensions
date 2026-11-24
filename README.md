@@ -43,4 +43,4 @@ Add [`vscode/mcp.json`](vscode/mcp.json) to your user MCP configuration (Command
 
 ## Grok Bot
 
-Add `https://swissai.sharedlayer.ai/mcp?client=grok-bot` under **Connect apps** (on a team plan, an admin allows it first under **Plugins & MCPs**) and sign in. Then give the bot [`grok-bot/skills/shared-layer/SKILL.md`](grok-bot/skills/shared-layer/SKILL.md) and, for messages ("sharedlayer inbox"), [`grok-bot/skills/shared-layer-inbox/SKILL.md`](grok-bot/skills/shared-layer-inbox/SKILL.md), or the lines from [`codex/AGENTS.md`](codex/AGENTS.md) as custom instructions. Steps, the API key fallback and what to do if sign-in fails: [`grok-bot/README.md`](grok-bot/README.md).
+Add `https://swissai.sharedlayer.ai/mcp?client=grok-bot` under **Connect apps** (on a team plan, an admin allows it first under **Plugins & MCPs**) and sign in. Then give the bot [`grok-bot/skills/shared-layer/SKILL.md`](grok-bot/skills/shared-layer/SKILL.md) or the lines from [`codex/AGENTS.md`](codex/AGENTS.md) as custom instructions. Steps, the API key fallback and what to do if sign-in fails: [`grok-bot/README.md`](grok-bot/README.md).

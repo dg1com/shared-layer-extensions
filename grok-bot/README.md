@@ -26,10 +26,10 @@ In Grok Bot, open **Connect apps**, add a custom MCP server with the URL above, 
 The skill tells the bot when to use the knowledge base (recall, remember, save) and to call `begin` first.
 
 - If Grok Bot takes skills, add [`skills/shared-layer/SKILL.md`](skills/shared-layer/SKILL.md). It uses the Agent Skills format: a folder with a `SKILL.md`.
-- For messages, also add [`skills/shared-layer-inbox/SKILL.md`](skills/shared-layer-inbox/SKILL.md). Then "sharedlayer inbox" shows your messages, and "check my inbox every 10 minutes" sets up a routine that does.
+- It covers messages too: "sharedlayer inbox" shows your messages, and "check my inbox every 10 minutes" sets up a routine that does.
 - Otherwise, paste the block from [`codex/AGENTS.md`](../codex/AGENTS.md) into the bot's custom instructions.
 
-The server also sends its own instructions to every client, so the bot gets the basics even without either.
+The server also sends its own instructions to every client, so the bot gets the basics even without them.
 
 ## Check it
 
